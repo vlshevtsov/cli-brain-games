@@ -13,7 +13,7 @@ const runEvenGame = () => {
     const question = getRandomNumber();
     let correctAnswer = isEven(question) ? 'yes' : 'no';
 
-    if(attempt > 10) {
+    if(attempt > 3) {
       console.log(`Congratulations, ${userName}!`)
       return null;
     };
