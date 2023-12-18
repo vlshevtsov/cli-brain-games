@@ -19,7 +19,7 @@ const getQA = () => {
       question = `${a} + ${b}`;
       correctAnswer = a + b;
       break;
-    default: 
+    default:
       question = `${a} * ${b}`;
       correctAnswer = a * b;
       break;

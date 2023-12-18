@@ -1,6 +1,6 @@
-export const isEven = number => !(number % 2);
+export const isEven = (number) => !(number % 2);
 
-export const getRandomNumber = base => Math.floor(Math.random() * base);
+export const getRandomNumber = (base) => Math.floor(Math.random() * base);
 
 export const getEuclidGCD = (a, b) => {
   if (a < b) return getEuclidGCD(b, a);
@@ -8,9 +8,9 @@ export const getEuclidGCD = (a, b) => {
   return getEuclidGCD(b, a % b);
 };
 
-export const getProgression = (fn, start, count) => {
-  return new Array(count).fill(0).map((elem, index) => fn(start + index));
-};
+export const getProgression = (fn, start, count) => (
+  new Array(count).fill(0).map((elem, index) => fn(start + index))
+);
 
 export const isPrime = (number) => {
   if (number < 2) return false;

@@ -10,6 +10,6 @@ const getQA = () => {
   const correctAnswer = getEuclidGCD(a, b);
 
   return [question, correctAnswer.toString()];
-}
+};
 
 export default () => run(desc, getQA);

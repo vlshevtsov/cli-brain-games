@@ -8,7 +8,7 @@ const getQA = () => {
   const d = getRandomNumber(10) + 1;
   const start = getRandomNumber(50);
   const missed = getRandomNumber(10);
-  const progression = getProgression(n => a + (d * (n - 1)), start, 10);
+  const progression = getProgression((n) => a + (d * (n - 1)), start, 10);
 
   const correctAnswer = progression.splice(missed, 1, ['..']);
   const question = progression.join(' ');

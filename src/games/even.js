@@ -5,7 +5,7 @@ const desc = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getQA = () => {
   const question = getRandomNumber(100);
-  let correctAnswer = isEven(question) ? 'yes' : 'no';
+  const correctAnswer = isEven(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
