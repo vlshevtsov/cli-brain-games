@@ -29,7 +29,7 @@ export const run = (desc, getQA) => {
     const userAnswer = getUserAnswer(question);
 
     if (userAnswer !== correctAnswer) {
-      console.log(`${userAnswer}' mis wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${user}!`);
       return null;
     }

@@ -10,6 +10,9 @@ brain-even:
 brain-calc:
 	node bin/brain-calc.js
 
+brain-calc:
+	node bin/brain-gcd.js
+
 lint:
 	npx eslint .
 
