@@ -7,3 +7,7 @@ export const getEuclidGCD = (a, b) => {
   if (b === 0) return a;
   return getEuclidGCD(b, a % b);
 };
+
+export const getProgression = (fn, start, count) => {
+  return new Array(count).fill(0).map((elem, index) => fn(start + index));
+}
